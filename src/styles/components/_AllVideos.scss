@@ -1,0 +1,15 @@
+.movies-videos {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 40px;
+
+    .card {
+      position: relative;
+    }
+    //
+    img {
+      height: 100%;
+    }
+  }
+}

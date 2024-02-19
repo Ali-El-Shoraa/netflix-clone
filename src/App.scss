@@ -1,0 +1,126 @@
+@use "./styles/pages/Nelflix";
+@use "./styles/pages/Signup";
+@use "./styles/pages/Login";
+@use "./styles/pages/Sliders";
+@use "./styles/pages/Details";
+@use "./styles/pages/MyLists";
+
+@use "./styles/components/Header";
+@use "./styles/components/CardSliders";
+@use "./styles/components/Videosiframe";
+@use "./styles/components/Photos";
+@use "./styles/components/AllVideos";
+@use "./styles/components/SearchBar";
+@use "./styles/components/ListGenres";
+@use "./styles/components/Cast";
+@use "./styles/components/Popup";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: #181818;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
+
+// react - pagination
+
+.paginate {
+  margin: 40px auto;
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 13px;
+
+  .red {
+    color: red;
+  }
+  li {
+    cursor: pointer;
+  }
+}
+
+// details popup
+
+.card {
+  position: relative;
+
+  .btn-details {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 15px 30px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #e50914;
+      border: 1px solid #e50914;
+    }
+  }
+}
+
+// .splid {
+//   overflow: visible;
+// }

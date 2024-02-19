@@ -1,0 +1,58 @@
+.nelflix {
+  position: relative;
+
+  //
+  .container {
+    // position: absolute;
+    // top: 50%;
+    // width: fit-content;
+    height: fit-content;
+
+    @media (max-width: 599px) {
+      height: auto;
+    }
+    //
+
+    .text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      width: 500px;
+      max-width: 100%;
+
+      @media (max-width: 599px) {
+        position: static;
+        transform: translateY(0);
+      }
+      //
+      .title {
+        margin: 40px auto 20px;
+        font-size: 30px;
+      }
+      //
+      .info {
+        line-height: 1.6;
+      }
+    }
+    //
+  }
+  img {
+    position: relative;
+  }
+
+  .layout {
+    //   background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.47942927170868344) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.list-genres {
+  margin-bottom: 20px;
+  .container {
+    //
+    select {
+      padding: 13px 30px;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+      color: #e50914;
+      border-radius: 6px;
+      cursor: pointer;
+
+      //
+      option {
+        background-color: #333;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+}

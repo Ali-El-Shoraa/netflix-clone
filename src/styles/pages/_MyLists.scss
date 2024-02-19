@@ -1,0 +1,20 @@
+.my-lists {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  //
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 40px;
+
+    .card {
+      position: relative;
+    }
+    //
+    img {
+      height: 100%;
+    }
+  }
+}
